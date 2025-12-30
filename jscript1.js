@@ -34,3 +34,8 @@ function showDialog({
   message = "",
   inputValue = "",
   confirmText = "Save",
+   cancelText = "Cancel",
+  showInput = false,
+  onConfirm,
+  onCancel,
+})
