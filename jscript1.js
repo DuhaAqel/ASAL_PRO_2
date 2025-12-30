@@ -19,3 +19,8 @@ const isValidTask = (text) => {
     inputError.style.display = "block";
     return false;
   }
+ if (text.trim().length < 5) {
+    inputError.textContent = "Task must be at least 5 characters long";
+    inputError.style.display = "block";
+    return false;
+  }
