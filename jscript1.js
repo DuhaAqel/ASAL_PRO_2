@@ -24,3 +24,6 @@ const isValidTask = (text) => {
     inputError.style.display = "block";
     return false;
   }
+ inputError.style.display = "none";
+  return true;
+};
