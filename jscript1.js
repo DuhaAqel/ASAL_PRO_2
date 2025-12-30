@@ -27,3 +27,10 @@ const isValidTask = (text) => {
  inputError.style.display = "none";
   return true;
 };
+
+
+function showDialog({
+  title = "",
+  message = "",
+  inputValue = "",
+  confirmText = "Save",
