@@ -75,4 +75,9 @@ function showDialog({
  let input;
   if (showInput) {
     input = document.createElement("input");
+ input.type = "text";
+    input.value = inputValue;
+    input.className = "dialog-input";
+    dialog.appendChild(input);
+  }
 
