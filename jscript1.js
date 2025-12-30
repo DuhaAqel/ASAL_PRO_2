@@ -39,3 +39,7 @@ function showDialog({
   onConfirm,
   onCancel,
 })
+
+ {
+  const oldDialog = document.getElementById("custom-dialog");
+  if (oldDialog) oldDialog.remove();
