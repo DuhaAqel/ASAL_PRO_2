@@ -43,3 +43,9 @@ function showDialog({
  {
   const oldDialog = document.getElementById("custom-dialog");
   if (oldDialog) oldDialog.remove();
+   const overlay = document.createElement("div");
+  overlay.id = "custom-dialog";
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+
