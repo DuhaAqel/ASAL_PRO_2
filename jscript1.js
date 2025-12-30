@@ -13,4 +13,9 @@ const isValidTask = (text) => {
     inputError.textContent = "Task cannot be empty";
     inputError.style.display = "block";
     return false;
-  } }
+  } 
+   if (/^\d/.test(text)) {
+    inputError.textContent = "Task cannot start with a number";
+    inputError.style.display = "block";
+    return false;
+  }
