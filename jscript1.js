@@ -59,3 +59,8 @@ function showDialog({
   const dialog = document.createElement("div");
   dialog.className = "dialog-box";
 
+   const h2 = document.createElement("div");
+  h2.className = "dialog-title";
+  h2.textContent = title;
+  dialog.appendChild(h2);
+
