@@ -27,3 +27,35 @@ const isValidTask = (text) => {
  inputError.style.display = "none";
   return true;
 };
+
+
+function showDialog({
+  title = "",
+  message = "",
+  inputValue = "",
+  confirmText = "Save",
+   cancelText = "Cancel",
+  showInput = false,
+  onConfirm,
+  onCancel,
+})
+
+ {
+  const oldDialog = document.getElementById("custom-dialog");
+  if (oldDialog) oldDialog.remove();
+   const overlay = document.createElement("div");
+  overlay.id = "custom-dialog";
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+ overlay.style.width = "100vw";
+  overlay.style.height = "100vh";
+  overlay.style.background = "rgba(0,0,0,0.18)";
+  overlay.style.display = "flex";
+  overlay.style.alignItems = "center";
+
+   overlay.style.justifyContent = "center";
+  overlay.style.zIndex = 9999;
+  const dialog = document.createElement("div");
+  dialog.className = "dialog-box";
+
