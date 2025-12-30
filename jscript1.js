@@ -7,3 +7,10 @@ let currentFilter = "All";
 const filterButtons = document.querySelectorAll(".filter-button");
 const deleteDoneBtn = document.getElementById("delete-donetask-button");
 const deleteAllBtn = document.getElementById("delete-alltask-buttton");
+
+const isValidTask = (text) => {
+  if (text.trim() === "") {
+    inputError.textContent = "Task cannot be empty";
+    inputError.style.display = "block";
+    return false;
+  } }
