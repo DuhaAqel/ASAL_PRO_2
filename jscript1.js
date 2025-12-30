@@ -54,3 +54,8 @@ function showDialog({
   overlay.style.display = "flex";
   overlay.style.alignItems = "center";
 
+   overlay.style.justifyContent = "center";
+  overlay.style.zIndex = 9999;
+  const dialog = document.createElement("div");
+  dialog.className = "dialog-box";
+
