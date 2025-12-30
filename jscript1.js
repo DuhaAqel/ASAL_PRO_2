@@ -59,3 +59,25 @@ function showDialog({
   const dialog = document.createElement("div");
   dialog.className = "dialog-box";
 
+   const h2 = document.createElement("div");
+  h2.className = "dialog-title";
+  h2.textContent = title;
+  dialog.appendChild(h2);
+
+   if (message) {
+    const msg = document.createElement("div");
+    msg.textContent = message;
+ msg.style.marginBottom = "14px";
+    msg.style.textAlign = "center";
+    dialog.appendChild(msg);
+  }
+
+ let input;
+  if (showInput) {
+    input = document.createElement("input");
+ input.type = "text";
+    input.value = inputValue;
+    input.className = "dialog-input";
+    dialog.appendChild(input);
+  }
+
