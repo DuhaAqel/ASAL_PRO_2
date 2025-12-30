@@ -72,3 +72,7 @@ function showDialog({
     dialog.appendChild(msg);
   }
 
+ let input;
+  if (showInput) {
+    input = document.createElement("input");
+
