@@ -67,4 +67,8 @@ function showDialog({
    if (message) {
     const msg = document.createElement("div");
     msg.textContent = message;
+ msg.style.marginBottom = "14px";
+    msg.style.textAlign = "center";
+    dialog.appendChild(msg);
+  }
 
