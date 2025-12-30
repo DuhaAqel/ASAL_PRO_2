@@ -64,3 +64,7 @@ function showDialog({
   h2.textContent = title;
   dialog.appendChild(h2);
 
+   if (message) {
+    const msg = document.createElement("div");
+    msg.textContent = message;
+
