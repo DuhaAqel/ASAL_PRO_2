@@ -182,3 +182,30 @@ h1 {
   background-color: #f08080;
 }
 
+#error-input,
+.error-input {
+  color: red;
+  display: none;
+  margin-top: 5px;
+  margin-left: 0;
+  margin-right: auto;
+  font-size: 0.9rem;
+  text-align: left;
+  border: none !important;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+#custom-dialog {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+
+
