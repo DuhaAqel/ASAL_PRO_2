@@ -170,7 +170,7 @@ const createTaskElement = (text, isDone = false) => {
       },
     });
   });
-  
+
    deleteBtn.addEventListener("click", () => {
     showDialog({
       title: "Delete Task",
@@ -186,4 +186,14 @@ const createTaskElement = (text, isDone = false) => {
     });
   });
 
-  }
+   taskList.appendChild(li);
+  updateDeleteButtons();
+  };
+
+  const addTask = () => {
+  const value = taskInput.value.trim();
+  if (!isValidTask(value)) return;
+  saveTaskToLocalStorage(value);
+  taskInput.value = "";
+  renderTasks();
+};
