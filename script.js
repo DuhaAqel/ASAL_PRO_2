@@ -224,3 +224,8 @@ const saveTaskToLocalStorage = (task) => {
   tasks.push({ text: task, isDone: false });
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
+
+window.addEventListener("DOMContentLoaded", () => {
+  renderTasks();
+  updateDeleteButtons();
+});
