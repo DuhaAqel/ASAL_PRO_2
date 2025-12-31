@@ -138,4 +138,9 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 
