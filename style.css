@@ -182,3 +182,11 @@ h1 {
   background-color: #f08080;
 }
 
+#error-input,
+.error-input {
+  color: red;
+  display: none;
+  margin-top: 5px;
+  margin-left: 0;
+
+
