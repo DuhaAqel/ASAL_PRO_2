@@ -81,3 +81,19 @@ function showDialog({
     dialog.appendChild(input);
   }
 
+
+   const btns = document.createElement("div");
+  btns.className = "dialog-actions";
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "dialog-save";
+  okBtn.textContent = confirmText;
+
+  if (title === "Rename Task") {
+    okBtn.style.backgroundColor = "#0d6efd";
+    okBtn.style.color = "#fff";
+  } else {
+    okBtn.style.backgroundColor = "#e0e0e0";
+    okBtn.style.color = "#000";
+  }
+}
