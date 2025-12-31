@@ -173,4 +173,7 @@ h1 {
 
   max-width: 100%;
 }
+.delete-buttons button:hover {
+  background-color: #f08080;
+}
 
