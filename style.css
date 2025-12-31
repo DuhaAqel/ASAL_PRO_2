@@ -194,3 +194,13 @@ h1 {
   border: none !important;
 }
 
+.edit-btn,
+.delete-btn {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+
