@@ -81,3 +81,7 @@ h1 {
     background-color: #007ba7;
   }
 }
+.todolist-head {
+  margin: 3% 0;
+  font-size: 2rem;
+}
