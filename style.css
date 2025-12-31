@@ -106,3 +106,8 @@ h1 {
  font-weight: 500;
     background-color: #0099cc;
     color: white;
+ border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
