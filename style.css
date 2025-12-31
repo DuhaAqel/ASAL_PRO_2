@@ -43,3 +43,7 @@ h1 {
     border-radius: 0.5%;
     overflow: hidden;
 
+ .icon {
+      width: 50px;
+      padding: 0 10px;
+      background-color: #0099cc;
