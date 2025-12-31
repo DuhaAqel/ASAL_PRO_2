@@ -125,3 +125,7 @@ h1 {
 .filter-btn:hover {
   background-color: #007ba7;
 }
+.list-section {
+  margin-bottom: 2%;
+}
+
