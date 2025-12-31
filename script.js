@@ -229,3 +229,20 @@ window.addEventListener("DOMContentLoaded", () => {
   renderTasks();
   updateDeleteButtons();
 });
+
+const renderTasks = () => {
+  const allTasks = getTasksFromLocalStorage();
+  let filteredTasks = [];
+
+  if (currentFilter === "All") {
+    filteredTasks = allTasks;
+  } else if (currentFilter === "Done") {
+    filteredTasks = allTasks.filter((task) => task.isDone);
+  } else if (currentFilter === "Todo") {
+    filteredTasks = allTasks.filter((task) => !task.isDone);
+  }
+
+  taskList.innerHTML = "";
+  filteredTasks.forEach((task) => createTaskElement(task.text, task.isDone));
+  updateNoTaskMessage();
+};
