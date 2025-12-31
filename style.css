@@ -33,3 +33,13 @@ h1 {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+
+
+   .row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 3%;
+    border-radius: 0.5%;
+    overflow: hidden;
+
