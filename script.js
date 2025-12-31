@@ -170,5 +170,20 @@ const createTaskElement = (text, isDone = false) => {
       },
     });
   });
+  
+   deleteBtn.addEventListener("click", () => {
+    showDialog({
+      title: "Delete Task",
+      message: "Are you sure you want to delete this task?",
+      confirmText: "Delete",
+      cancelText: "Cancel",
+      showInput: false,
+      onConfirm: () => {
+        li.remove();
+        updateNoTaskMessage();
+        updateTasksInLocalStorage();
+      },
+    });
+  });
 
   }
