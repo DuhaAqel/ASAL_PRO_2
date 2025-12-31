@@ -155,4 +155,20 @@ const createTaskElement = (text, isDone = false) => {
     updateTasksInLocalStorage();
   });
 
+    editBtn.addEventListener("click", () => {
+    showDialog({
+      title: "Rename Task",
+      inputValue: span.textContent,
+      confirmText: "SAVE",
+      cancelText: "CANCEL",
+      showInput: true,
+      onConfirm: (newValue) => {
+        if (newValue !== null && isValidTask(newValue)) {
+          span.textContent = newValue;
+          updateTasksInLocalStorage();
+        }
+      },
+    });
+  });
+
   }
