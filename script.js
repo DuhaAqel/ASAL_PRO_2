@@ -259,3 +259,9 @@ filterButtons.forEach((btn) => {
     btn.classList.add("active");
   });
 });
+
+const updateDeleteButtons = () => {
+  const allTasks = document.querySelectorAll(".task-item");
+  deleteDoneBtn.disabled = allTasks.length === 0;
+  deleteAllBtn.disabled = allTasks.length === 0;
+};
