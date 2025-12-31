@@ -188,5 +188,9 @@ h1 {
   display: none;
   margin-top: 5px;
   margin-left: 0;
-
+  margin-right: auto;
+  font-size: 0.9rem;
+  text-align: left;
+  border: none !important;
+}
 
