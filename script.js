@@ -269,3 +269,25 @@ const updateDeleteButtons = () => {
 const showNoTasksAlert = () => {
   alert("No tasks to delete");
 };
+
+deleteAllBtn.addEventListener("click", () => {
+  const tasks = document.querySelectorAll(".task-item");
+  if (tasks.length === 0) {
+    showNoTasksAlert();
+    return;
+  }
+
+  showDialog({
+    title: "Delete All Tasks",
+    message: "Are you sure you want to delete all tasks?",
+    confirmText: "Delete All",
+    cancelText: "Cancel",
+    showInput: false,
+    onConfirm: () => {
+      tasks.forEach((task) => task.remove());
+      updateTasksInLocalStorage();
+      updateNoTaskMessage();
+      updateDeleteButtons();
+    },
+  });
+});
