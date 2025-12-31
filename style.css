@@ -177,3 +177,8 @@ h1 {
   background-color: #f08080;
 }
 
+
+.delete-button button:hover {
+  background-color: #f08080;
+}
+
