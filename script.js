@@ -116,4 +116,10 @@ function showDialog({
     overlay.remove();
     if (onCancel) onCancel();
   };
+
+    btns.appendChild(okBtn);
+  btns.appendChild(cancelBtn);
+  dialog.appendChild(btns);
+  overlay.appendChild(dialog);
+  document.body.appendChild(overlay);
 }
