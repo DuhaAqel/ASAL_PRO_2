@@ -214,3 +214,10 @@ const updateTasksInLocalStorage = () => {
   localStorage.setItem("tasks", JSON.stringify(tasks));
   renderTasks();
 };
+
+
+const getTasksFromLocalStorage = () => {
+  return JSON.parse(localStorage.getItem("tasks")) || [];
+};
+
+
