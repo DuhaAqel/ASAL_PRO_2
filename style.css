@@ -160,4 +160,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
+.delete-buttons button {
+  background-color: #dc3545;
+  color: white;
 
