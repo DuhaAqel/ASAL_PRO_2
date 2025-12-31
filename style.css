@@ -203,4 +203,9 @@ h1 {
   font-size: 1rem;
 }
 
+#custom-dialog {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+
 
