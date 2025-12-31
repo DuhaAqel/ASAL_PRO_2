@@ -291,3 +291,29 @@ deleteAllBtn.addEventListener("click", () => {
     },
   });
 });
+
+deleteDoneBtn.addEventListener("click", () => {
+  const tasks = document.querySelectorAll(".task-item");
+  const doneTasks = Array.from(tasks).filter(
+    (task) => task.querySelector(".task-checkbox").checked
+  );
+
+  if (doneTasks.length === 0) {
+    showNoTasksAlert();
+    return;
+  }
+
+  showDialog({
+    title: "Delete Completed Tasks",
+    message: "Are you sure you want to delete all completed tasks?",
+    confirmText: "Delete Done",
+    cancelText: "Cancel",
+    showInput: false,
+    onConfirm: () => {
+      doneTasks.forEach((task) => task.remove());
+      updateTasksInLocalStorage();
+      updateNoTaskMessage();
+      updateDeleteButtons();
+    },
+  });
+});
