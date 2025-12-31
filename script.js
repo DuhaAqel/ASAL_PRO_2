@@ -197,3 +197,9 @@ const createTaskElement = (text, isDone = false) => {
   taskInput.value = "";
   renderTasks();
 };
+
+addTaskBtn.addEventListener("click", addTask);
+
+taskInput.addEventListener("input", () => {
+  inputError.style.display = "none";
+});
