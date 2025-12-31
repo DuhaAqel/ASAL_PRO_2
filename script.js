@@ -96,4 +96,24 @@ function showDialog({
     okBtn.style.backgroundColor = "#e0e0e0";
     okBtn.style.color = "#000";
   }
+
+    const cancelBtn = document.createElement("button");
+  cancelBtn.className = "dialog-cancel";
+  cancelBtn.textContent = cancelText;
+
+  okBtn.onclick = () => {
+    overlay.remove();
+    if (onConfirm) {
+      if (showInput) {
+        onConfirm(input.value);
+      } else {
+        onConfirm(undefined);
+      }
+    }
+  };
+
+  cancelBtn.onclick = () => {
+    overlay.remove();
+    if (onCancel) onCancel();
+  };
 }
