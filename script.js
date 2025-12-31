@@ -246,3 +246,7 @@ const renderTasks = () => {
   filteredTasks.forEach((task) => createTaskElement(task.text, task.isDone));
   updateNoTaskMessage();
 };
+
+const updateNoTaskMessage = () => {
+  noTaskMsg.style.display = taskList.children.length === 0 ? "block" : "none";
+};
