@@ -268,3 +268,7 @@ h1 {
   width: 20px;
   height: 20px;
 }
+
+.delete-btn:hover svg {
+  fill: darkred;
+}
