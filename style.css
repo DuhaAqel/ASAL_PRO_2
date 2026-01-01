@@ -230,3 +230,10 @@ h1 {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.dialog-input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
