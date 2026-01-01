@@ -272,3 +272,9 @@ h1 {
 .delete-btn:hover svg {
   fill: darkred;
 }
+
+.edit-btn svg {
+  fill: rgb(217, 130, 58);
+  width: 20px;
+  height: 20px;
+}
