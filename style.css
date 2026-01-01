@@ -129,7 +129,6 @@ h1 {
   margin-bottom: 2%;
 }
 
-
 #task-list {
   list-style-type: none;
   margin-top: 10px;
@@ -153,8 +152,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 15px;
-
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
   margin-left: auto;
@@ -167,19 +165,22 @@ h1 {
   padding: 12px;
   border-radius: 5px;
   cursor: pointer;
-
    flex: 1;
   min-width: 180px;
-
   max-width: 100%;
 }
 .delete-buttons button:hover {
   background-color: #f08080;
 }
 
-
 .delete-button button:hover {
   background-color: #f08080;
+}
+
+button:disabled {
+  background-color: #f97474 !important;
+  color: #ffffff;
+  opacity: 0.6;
 }
 
 #error-input,
