@@ -262,3 +262,9 @@ h1 {
   background-color: #dc3545;
   color: white;
 }
+
+.delete-btn svg {
+  fill: rgb(227, 58, 58);
+  width: 20px;
+  height: 20px;
+}
